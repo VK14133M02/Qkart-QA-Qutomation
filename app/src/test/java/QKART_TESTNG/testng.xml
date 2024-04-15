@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Group Test">
+
+    <parameter name="TC1_Username" value="testUser" />
+    <parameter name="TC1_Password" value="abc@123" />
+    <parameter name="TC2_Username" value="testUser" />
+    <parameter name="TC2_Password" value="abc@123" />
+    <parameter name="TC7_ListOfProductsToAddToCart" value="Stylecon 9 Seater RHS Sofa Set;Xtend Smart Watch" />
+
+     <test name = "Test Execution using testNG">
+
+        <groups>
+                <run>
+                    <include name = "Sanity"></include>
+                    <include name = "Regression"></include>
+                </run>
+        </groups>
+
+        <parameter name="TC3_ProductNameToSearchFor" value="YONEX" />
+        <parameter name="TC4_ProductNameToSearchFor" value="Roadster" />
+        <parameter name="TC5_ProductNameToSearchFor" value="YONEX Smash Badminton Racquet" />
+        <parameter name="TC5_ProductNameToSearchFor2" value="Tan Leatherette Weekender Duffle" />
+        <parameter name="TC5_AddressDetails" value="Addr line 1 addr Line 2 addr line 3" />
+        <parameter name="TC6_ProductNameToSearch1" value="Xtend Smart Watch" />
+        <parameter name="TC6_ProductNameToSearch2" value="Yarine Floor Lamp" />
+        <parameter name="TC8_ProductName" value="Stylecon 9 Seater RHS Sofa Set" />
+        <parameter name="TC8_Qty" value="60" />
+        <parameter name="TC11_ContactusUserName" value="crio user" />
+        <parameter name="TC11_ContactUsEmail" value="criouser@gmail.com" />
+        <parameter name="TC11_QueryContent" value="Testing the contact us page" />
+        <parameter name="TC12_ProductNameToSearch" value="YONEX Smash Badminton Racquet" />
+        <parameter name="TC12_AddresstoAdd" value="Addr line 1 addr Line 2 addr line 3" />
+        <classes>
+            <class name="QKART_TESTNG.QKART_Tests"></class>
+        </classes>
+        <!-- <packages>
+            <package name="QKART_TESTNG"></package>
+        </packages> -->
+    </test> 
+</suite>
