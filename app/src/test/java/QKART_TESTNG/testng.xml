@@ -8,6 +8,10 @@
     <parameter name="TC2_Password" value="abc@123" />
     <parameter name="TC7_ListOfProductsToAddToCart" value="Stylecon 9 Seater RHS Sofa Set;Xtend Smart Watch" />
 
+    <listeners>
+        <listener class-name = "QKART_TESTNG.ListenerClass"></listener>
+    </listeners>
+
      <test name = "Test Execution using testNG">
 
         <groups>
